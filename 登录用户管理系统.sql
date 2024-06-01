@@ -1,0 +1,22 @@
+CREATE TABLE DM_ADMIN(
+  ID INT PRIMARY KEY AUTO_INCREMENT, -- 管理员ID，自增
+  USERNAME VARCHAR(20) NOT NULL UNIQUE, -- 用户名
+  PASSWORD VARCHAR(20) NOT NULL -- 密码
+);
+
+CREATE TABLE DM_TEAM(
+  ID INT PRIMARY KEY AUTO_INCREMENT, -- 成员ID，自增
+  NAME VARCHAR(50) NOT NULL, -- 用户名
+  MCLASS VARCHAR(20) NOT NULL, -- 班级
+  AGE INT NOT NULL, -- 年龄
+  SOCIETY VARCHAR(20) NOT NULL, -- 社团
+  NOTE VARCHAR(255) NOT NULL -- 备注
+);
+
+INSERT INTO DM_ADMIN(USERNAME, PASSWORD) VALUES ('admin', 'admin');
+
+INSERT INTO DM_TEAM (NAME, MCLASS, AGE, SOCIETY, NOTE) VALUES 
+('张三', '一班', 19, '街舞社', '热爱舞蹈'),
+('李四', '二班', 19, '英语社', '英语达人'),
+('王五', '三班', 20, '小提琴社', '小提琴高手'),
+('赵六', '四班', 18, '篮球社', '篮球爱好者');
