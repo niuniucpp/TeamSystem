@@ -2,3 +2,4 @@
 ### ++++++++++++++++++++++++++++++++++++++++++
 # 作者：NIUNIU🐂
 # student of cdj school from china
+LibManage/src/com/cdj/tool/jdbc.properties 文件配置要更改成自己的
